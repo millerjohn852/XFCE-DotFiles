@@ -1,0 +1,22 @@
+#!/bin/sh
+
+echo removing files
+find home -type f | sed 's/home\///g' | xargs -i{} rm -fv ~/{}
+echo finished removing files
+
+echo making folders
+find home/ -type d | tail -n +2 | sed 's/home\///g' | xargs -I{} mkdir -vp ~/{}
+echo finished making folders
+
+echo linking files
+find home -type f | sed 's/home\///g' | xargs -i{} ln -vs $(pwd)/home/{} ~/{}
+echo finished linking files
+
+echo installing vim plug
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+echo finished installing vim plug
+
+echo making some other directories
+mkdir -v ~/.scripts
+echo finished making other directories

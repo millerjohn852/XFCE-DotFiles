@@ -1,0 +1,85 @@
+[colors.bright]
+black = "0x8a8a8a"
+blue = "0x949494"
+cyan = "0xd65d0e"
+green = "0x3a3a3a"
+magenta = "0xd5c4a1"
+red = "0xff8700"
+white = "0xebdbb2"
+yellow = "0x4e4e4e"
+
+[colors.cursor]
+cursor = "0xdab997"
+text = "0x262626"
+
+[colors.normal]
+black = "0x262626"
+blue = "0x83adad"
+cyan = "0x85ad85"
+green = "0xafaf00"
+magenta = "0xd485ad"
+red = "0xd75f5f"
+white = "0xdab997"
+yellow = "0xffaf00"
+
+[colors.primary]
+background = "0x262626"
+foreground = "0xdab997"
+
+[font]
+size = 8
+
+[font.bold]
+family = "Iosevka Term"
+style = "Bold"
+
+[font.bold_italic]
+family = "Iosevka Term"
+style = "Bold Italic"
+
+[font.italic]
+family = "Iosevka Term"
+style = "Italic"
+
+[font.normal]
+family = "Iosevka Term"
+style = "Regular"
+
+[[keyboard.bindings]]
+chars = "\u001Bj"
+key = "J"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bk"
+key = "K"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bh"
+key = "H"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001Bl"
+key = "L"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Command|Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Equals"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Command"
+
+[window.padding]
+x = 20
+y = 20
